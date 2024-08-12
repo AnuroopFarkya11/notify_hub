@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "816852086363",
+    "project_id": "allquickbootprojects",
+    "storage_bucket": "allquickbootprojects.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816852086363:android:395f67ec369adeafe6197e",
+        "android_client_info": {
+          "package_name": "com.example.allbootnextproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSq85jOrMRrSdw5GuhtRoL_L5fja09_s4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816852086363:android:7936f08caf1ce084e6197e",
+        "android_client_info": {
+          "package_name": "com.firebase.local.hive.notifications.example"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSq85jOrMRrSdw5GuhtRoL_L5fja09_s4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816852086363:android:1648056317f8a984e6197e",
+        "android_client_info": {
+          "package_name": "com.newsfeed.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSq85jOrMRrSdw5GuhtRoL_L5fja09_s4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816852086363:android:559152cac70c1ff2e6197e",
+        "android_client_info": {
+          "package_name": "com.visionwaves.superapp.aramco_super_app_poc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSq85jOrMRrSdw5GuhtRoL_L5fja09_s4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

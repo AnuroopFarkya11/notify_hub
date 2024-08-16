@@ -1,21 +1,26 @@
 name: notify_sync
-description: "A new Flutter package project."
-version: 0.0.1
-homepage:
+description: >
+  notify_sync is a Flutter package that integrates Firebase Cloud Messaging to handle incoming notifications,
+  displays notifications locally on the device, and stores them in a Hive database for offline access.
+  The package is designed to provide an easy-to-use solution for managing notifications in Flutter apps.
+
+version: 1.0.0
+homepage: https://github.com/AnuroopFarkya11/notify_sync
 
 environment:
   sdk: '>=3.2.6 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
-  firebase_core: ^2.27.0
-  firebase_messaging: ^14.7.19
   flutter:
     sdk: flutter
+  firebase_core: ^2.27.0
+  firebase_messaging: ^14.7.19
   flutter_local_notifications: ^17.2.1+2
   hive_flutter: ^1.1.0
   path_provider: ^2.1.4
-  plugin_platform_interface: ^2.0.2
+  hive: ^2.2.3
+
 
 dev_dependencies:
   flutter_test:

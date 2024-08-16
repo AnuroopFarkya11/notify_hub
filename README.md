@@ -1,40 +1,20 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+`notif_sync` is a Flutter package designed to manage notifications efficiently. It integrates Firebase Cloud Messaging, displays notifications using the local notification system, and stores them in Hive for offline access and historical data review.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Firebase Messaging integration for handling incoming notifications.
+- Local notifications to display alerts to the user.
+- Persistent storage of notifications using Hive for offline access.
+
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+To start using `notif_sync`, ensure that your Flutter project is set up with Firebase. You will need to:
+- Configure Firebase in your project by following the [Firebase setup instructions](https://firebase.google.com/docs/flutter/setup).
+- Add `notif_sync` to your `pubspec.yaml` dependencies.
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
-# flutter_nm
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  notif_sync: ^1.0.0

@@ -3,17 +3,17 @@ import 'package:notify_sync/src/modal/notification_item.dart';
 
 class BasicNotificationTile1 extends StatelessWidget {
   final NotificationItem notification;
-  final Key key;
+  final Key widgetKey;
   final void Function(DismissDirection direction)? onDismissed;
 
   const BasicNotificationTile1(
-      {required this.key, required this.notification, this.onDismissed})
-      : super(key: key);
+      {required this.widgetKey, required this.notification, this.onDismissed})
+      : super(key: widgetKey);
 
   @override
   Widget build(BuildContext context) {
     return Dismissible(
-      key: key,
+      key: widgetKey,
       direction: DismissDirection.endToStart,
       onDismissed: onDismissed,
       background: Container(

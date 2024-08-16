@@ -1,10 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
-import 'package:notify_sync/src/modal/notification_item.dart';
-import 'package:notify_sync/src/repository/notification_repository.dart';
-import 'package:notify_sync/src/service/hive_service.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:notify_sync/src/modal/notification_item.dart';
+import 'package:notify_sync/src/repository/notification_repository.dart';
+import 'package:notify_sync/src/service/hive_service.dart';
 
 class FirebaseNotificationService extends NotificationBase {
   FirebaseNotificationService._internal() {
@@ -74,12 +74,12 @@ class FirebaseNotificationService extends NotificationBase {
   @override
   void configureFirebaseListeners() {
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
-      print('Message received in foreground: ${message.messageId}');
+
       handleMessage(message);
     });
 
     FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
-      print('Message opened: ${message.messageId}');
+
       handleMessage(message);
     });
 
@@ -90,7 +90,7 @@ class FirebaseNotificationService extends NotificationBase {
   Future<void> handleMessage(RemoteMessage message) async {
     // Process the notification payload
     if (message.data.isNotEmpty) {
-      print('Message data: ${message.data}');
+
       // Handle the data payload
     }
     if (message.notification != null) {
@@ -111,7 +111,6 @@ class FirebaseNotificationService extends NotificationBase {
   @override
   Future<String?> getDeviceToken() async {
     String? token = await firebaseMessaging.getToken();
-    print("Device token : $token}");
     return token;
   }
 
@@ -163,7 +162,7 @@ class FirebaseNotificationService extends NotificationBase {
 
   void onDidReceiveLocalNotification(
       int id, String? title, String? body, String? payload) {
-    print("Ios notfication invoked: $id | $title | $body | $payload");
+
   }
 
   @override
@@ -173,13 +172,13 @@ class FirebaseNotificationService extends NotificationBase {
 
   @override
   Future<List<NotificationItem>> getNotifications() async {
-    print("getNotifications invoked");
+
     return await hiveService.getDataList<NotificationItem>();
   }
 
   static Future<void> firebaseMessagingBackgroundHandler(
       RemoteMessage message) async {
-    print('Handling background message: ${message.messageId}');
+
     await Hive.initFlutter();
     await Hive.openBox<NotificationItem>('app_notification');
     if (message.notification != null) {
@@ -195,12 +194,12 @@ class FirebaseNotificationService extends NotificationBase {
 
   @override
   Future<void> deleteNotification(NotificationItem notification) async {
-    print('deleteNotification invoked');
+
 
     await hiveService.deleteData<NotificationItem>(notification);
-    var list = await getNotifications();
 
-    print('List : ${list.toList().toString()}');
+
+
     // if (onNotificationReceived != null) {
     //   List<NotificationItem> list = await getNotifications();
     //   onNotificationReceived!(list);

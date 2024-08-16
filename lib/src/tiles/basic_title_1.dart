@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notify_hub/src/modal/notification_item.dart';
+import 'package:notify_sync/src/modal/notification_item.dart';
 
 class BasicNotificationTile1 extends StatelessWidget {
   final NotificationItem notification;

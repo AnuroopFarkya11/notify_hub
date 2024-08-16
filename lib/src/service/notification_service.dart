@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
-import 'package:notify_hub/src/modal/notification_item.dart';
-import 'package:notify_hub/src/repository/notification_repository.dart';
-import 'package:notify_hub/src/service/hive_service.dart';
+import 'package:notify_sync/src/modal/notification_item.dart';
+import 'package:notify_sync/src/repository/notification_repository.dart';
+import 'package:notify_sync/src/service/hive_service.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:hive_flutter/hive_flutter.dart';
